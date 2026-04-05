@@ -145,7 +145,7 @@ The fix1 iteration tested three additions: threshold 0.4, cross-validation AUC s
 - Cross-validation AUC on the training set was 0.805 ± 0.048, close to the held-out result of 0.794, confirming generalisation rather than memorisation
 - Threshold 0.4 analysis: recall 72.2%, precision 38.2%, F1 0.500, a better balance than 0.3 (higher precision) but the initial 0.3 threshold was retained as the deployment threshold given the asymmetric cost of missing a leaver (up to £74,900) versus an unnecessary retention conversation
 
-**attritionV4a_Sonnet_initial.py is therefore the final submitted model.**
+**attritionV4a_Sonnet_initial.py is therefore the final model**
 
 ---
 
@@ -160,7 +160,6 @@ The fix1 iteration tested three additions: threshold 0.4, cross-validation AUC s
 
 ## Key Improvements Over V3
 - XGBoost replaces Random Forest, sequential boosting handles minority class more effectively than parallel ensemble at this dataset size
-- scale_pos_weight=5.2 handles class imbalance natively, no CalibratedClassifierCV needed
 - Correlation analysis added, model-independent evidence of feature associations before any classifier is trained
 - Fairness audit added, demographic distributions compared between flagged and not-flagged employees
 
@@ -199,6 +198,20 @@ The fix1 iteration tested three additions: threshold 0.4, cross-validation AUC s
 
 ### V4a Sonnet Initial: Fairness Audit
 ![V4a Sonnet Fairness Audit](figures/v4a_Sonnet_initial_fairness_audit.png)
+
+
+### V4a Sonnet Fix1: Correlation Chart
+![V4a Sonnet Fix1 Correlation Chart](figures/v4a_Sonnet_fix1_correlation_chart.png)
+
+### V4a Sonnet Fix1: Confusion Matrix
+![V4a Sonnet Fix1 Confusion Matrix](figures/v4a_Sonnet_fix1_confusion_matrix.png)
+
+### V4a Sonnet Fix1: SHAP Importance
+![V4a Sonnet Fix1 SHAP Importance](figures/v4a_Sonnet_fix1_shap_importance.png)
+
+### V4a Sonnet Fix1: Fairness Audit
+![V4a Sonnet Fix1 Fairness Audit](figures/v4a_Sonnet_fix1_fairness_audit.png)
+
 
 ### V4b Opus Initial: Correlation Chart
 ![V4b Opus Correlation Chart](figures/v4b_Opus_initial_correlation_chart.png)
