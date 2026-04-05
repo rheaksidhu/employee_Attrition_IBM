@@ -77,8 +77,8 @@ Do not change anything else — keep all variable names, comments, preprocessing
 ## Key Findings Across Models
 - Haiku and Opus produced identical cross-validation results (AUC-ROC 0.818, Recall 0.713) but both tested on training data, inflating results
 - Opus used handle_unknown="error" which would crash on unseen categories
-- Sonnet used handle_unknown="ignore" and cross_val_predict, testing on unseen data, lower but more honest: AUC-ROC 0.817, Recall 0.717
-- V1b caught 0 true positives; V2b caught 170/237, a decisive improvement
+- Sonnet used handle_unknown="ignore" and cross_val_predict, testing on unseen data, lower but more reflective: AUC-ROC 0.817, Recall 0.717
+- V1b caught 0 true positives; V2b caught 170/237, a clear improvement
 - Sonnet selected as primary model for V3 on the basis of methodological correctness
 - V2b re-evaluated on 85/15 held-out split confirmed 0.823 AUC and 69.4% recall, logistic regression remains the strongest discriminator by AUC across all versions
 
@@ -87,10 +87,10 @@ Do not change anything else — keep all variable names, comments, preprocessing
 ## Results
 | Model | AUC-ROC | Recall | Notes |
 |-------|---------|--------|-------|
-| V2a Haiku | 0.818 | 0.713 | Tested on training data — inflated |
-| V2b Sonnet | 0.817 | 0.717 | Tested on unseen data — reliable |
+| V2a Haiku | 0.818 | 0.713 | Tested on training data, inflated results |
+| V2b Sonnet | 0.817 | 0.717 | Tested on unseen data, reliable results |
 | V2b Sonnet (85/15 rerun) | 0.823 | 0.694 | Re-evaluated for fair comparison with V4 |
-| V2c Opus | 0.818 | 0.713 | Tested on training data — inflated |
+| V2c Opus | 0.818 | 0.713 | Tested on training data, inflated results |
 
 ---
 
