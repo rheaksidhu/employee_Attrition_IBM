@@ -26,7 +26,21 @@ The meta prompt development process (prompts 1a–1f) is documented in [Meta_Pro
 
 ---
 
+## Initial Code
+The two unmodified AI-generated baseline scripts are:
+- [attritionV1a_ChatGPT_initial.py](../../blob/v1_Baseline/attritionV1a_ChatGPT_initial.py): unmodified GPT-5 output
+- [attritionV1b_Claude_initial.py](../../blob/v1_Baseline/attritionV1b_Claude_initial.py): unmodified Claude Sonnet 4.6 output
+
+## Final Code
+The final model is:
+- [attritionV4a_Sonnet_initial.py](../../blob/v4_XGBoost/attritionV4a_Sonnet_initial.py): XGBoost with SHAP explanations and fairness audit
+
+---
+
 ## Module
-BSc Applied Artificial Intelligence
-SPC4004 Exploring AI: Understanding and Applications
+BSC Applied Artificial Intelligence
+
+
+SPC4004 Exploring AI: Understanding and Applications 
+
 Queen Mary University of London
