@@ -30,8 +30,9 @@ The prompt used to generate both V1a and V1b is documented in [Meta_Prompt_Devel
 | V1b (Claude) | 86% | 0 | — |
 
 ## Figures
-### V1 Confusion Matrices
-![V1 Baseline Confusion Matrices](figures/v1_confusion_matrices.png)
 
-### Class Distribution
-![Class Distribution](figures/v1_class_distribution.png)
+### V1a (GPT-5) Confusion Matrix
+![V1a ChatGPT Confusion Matrix](figures/v1a_ChatGPT_final_confusion_matrix.png)
+
+### V1b (Claude) Confusion Matrix
+![V1b Claude Confusion Matrix](figures/v1b_Claude_final_confusion_matrix.png)
