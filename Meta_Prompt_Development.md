@@ -33,7 +33,7 @@ Return only the refined prompt, nothing else.
 
 ## 1b: Claude's Revised Meta Prompt (Partial Fix, Subtle Failures Remain)
 **Tool:** Claude Sonnet 4.6
-**Purpose:** Removed the most explicit failure instructions but subtle ones remained — LabelEncoder still applied to nominal variables, no cross-validation, no class weighting.
+**Purpose:** Removed the most explicit failure instructions but subtle ones remained: LabelEncoder still applied to nominal variables, no cross-validation, no class weighting.
 
 <details>
 <summary>Click to expand prompt 1b</summary>
@@ -86,7 +86,7 @@ Return only the refined prompt, nothing else.
 
 ## 1d: ChatGPT's Output from 1c (GPT-5)
 **Tool:** GPT-5
-**Purpose:** GPT-5's interpretation of 1c — produced a simpler meta prompt by removing all library-specific mentions and coding preferences.
+**Purpose:** GPT-5's interpretation of 1c, produced a simpler meta prompt by removing all library-specific mentions and coding preferences.
 
 <details>
 <summary>Click to expand prompt 1d</summary>
@@ -109,7 +109,7 @@ Write a complete Python script to perform a binary classification task predictin
 
 ## 1e: Claude's Output from 1c (Sonnet 4.6)
 **Tool:** Claude Sonnet 4.6
-**Purpose:** Claude's interpretation of 1c — kept every detail unchanged, preserving all library-specific mentions and coding conventions.
+**Purpose:** Claude's interpretation of 1c, kept every detail unchanged, preserving all library-specific mentions and coding conventions.
 
 <details>
 <summary>Click to expand prompt 1e</summary>
